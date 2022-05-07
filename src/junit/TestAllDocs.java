@@ -18,10 +18,6 @@ class TestAllDocs {
     }
     
 	public static void main(String[] args) throws Exception {
-		//
-		// TODO you probably want to add more code or more tests
-		// This just gets things started
-		//
 		
 		
 		// how long does it take to create a detector?
@@ -37,7 +33,7 @@ class TestAllDocs {
 		// The average essay is less than 500 words long.
 		// What is a good number to put here? Try some different values to
 		// figure that out!
-		Collection<String> pairs = detector.getSuspiciousPairs(500);
+		Collection<String> pairs = detector.getSuspiciousPairs(90);
 		for (String pair : pairs) {
 			System.out.println(pair);
 		}
